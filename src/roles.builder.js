@@ -27,10 +27,9 @@ const stateMethods = {
     if (!creep.memory.targetNodeId) {
       const constructionSites = creep.room.find(FIND_MY_CONSTRUCTION_SITES);
       
-      // STATE CHANGE
-      // Change to "GATHER" if there aren't any construction sites
+      // Suicide if there isn't anything to build
       if (constructionSites.length === 0) {
-        changeCreepState(creep, STATES.GATHER);
+        creep.suicide();
         return;
       }
       
