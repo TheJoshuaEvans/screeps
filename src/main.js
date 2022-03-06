@@ -31,6 +31,7 @@ module.exports.loop = function () {
 
     // Don't run the creep if it is still spawning
     if (creep.spawning) continue;
+    if (!roleMap[creep.memory.role]) continue;
 
     roleMap[creep.memory.role].run(creep);
 

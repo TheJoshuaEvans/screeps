@@ -1,10 +1,10 @@
 module.exports = function(grunt) {
   require('time-grunt')(grunt);
 
-  var config = require('./.env.json')
+  var config = require('./.screeps.json')
   var branch = grunt.option('branch') || config.branch;
   var email = grunt.option('email') || config.email;
-  var password = grunt.option('password') || config.password;
+  var token = grunt.option('token') || config.token;
   var ptr = grunt.option('ptr') ? false : config.ptr
 
   grunt.loadNpmTasks('grunt-screeps')
@@ -13,7 +13,7 @@ module.exports = function(grunt) {
     screeps: {
       options: {
         email: email,
-        password: password,
+        token: token,
         branch: branch,
         ptr: ptr
       },

@@ -4,7 +4,8 @@
   "description": "Screeps!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "grunt"
   },
   "repository": {
     "type": "git",
@@ -17,12 +18,12 @@
   },
   "homepage": "https://github.com/TheJoshuaEvans/screeps#readme",
   "dependencies": {
-    "@types/lodash": "^4.14.144",
-    "@types/screeps": "^2.5.5"
+    "@types/lodash": "^4.14.179",
+    "@types/screeps": "^3.2.4"
   },
   "devDependencies": {
-    "grunt": "^1.0.4",
-    "grunt-screeps": "^1.4.0",
+    "grunt": "^1.4.1",
+    "grunt-screeps": "^1.5.0",
     "time-grunt": "^2.0.0"
   }
 }

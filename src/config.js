@@ -7,7 +7,7 @@ module.exports = {
    * before spawning can occur
    */
   CREEP_COUNTS: {
-    HARVESTER: 10,
+    HARVESTER: 15,
     UPGRADER: 0,
     BUILDER: 4
   },
@@ -16,9 +16,9 @@ module.exports = {
    * Build arrays for each type of creep
    */
   CREEP_BUILDS: {
-    HARVESTER: [WORK,WORK,CARRY,MOVE,MOVE,MOVE],
-    UPGRADER: [WORK,CARRY,MOVE,MOVE],
-    BUILDER: [WORK,CARRY,MOVE,MOVE]
+    HARVESTER: [WORK,MOVE,CARRY],
+    UPGRADER: [WORK,CARRY,MOVE],
+    BUILDER: [WORK,CARRY,MOVE]
   },
 
   /**
