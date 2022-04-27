@@ -22,7 +22,7 @@
     "@types/screeps": "^3.2.4"
   },
   "devDependencies": {
-    "grunt": "^1.4.1",
+    "grunt": "^1.5.2",
     "grunt-screeps": "^1.5.0",
     "time-grunt": "^2.0.0"
   }
